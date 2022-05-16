@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: nikhil
+spec: 
+  replicas: 1
+  selector: 
+    matchLabels: 
+      run: nikhil
+  template: 
+    metadata: 
+      labels: 
+        run: nikhil
+    spec: 
+      containers: 
+        - 
+          image: sainikhil1999/nikhil  
+          name: nikhil
+          ports: 
+            - 
+              containerPort: 6000
