@@ -74,7 +74,7 @@ spec:
        stage('helm') {
            steps {
                sh 'helm version'
-               sh 'helm upgrade --install phoenix phoenixnap'
+               sh 'helm upgrade --install helm testapp'
            }
        }
      }
