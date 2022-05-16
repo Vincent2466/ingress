@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata: 
-  name: nikhil
+  name: helm
 spec: 
   replicas: 1
   selector: 
     matchLabels: 
-      run: nikhil
+      run: helm
   template: 
     metadata: 
       labels: 
-        run: nikhil
+        run: helm
     spec: 
       containers: 
         - 
-          image: sainikhil1999/nikhil  
-          name: nikhil
+          image: vincent53/helm
+          name: helm
           ports: 
             - 
               containerPort: 6000
